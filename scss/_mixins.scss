@@ -14,3 +14,9 @@
 @mixin flow {
   flex-flow: row wrap;
 }
+@mixin respon ($size) {
+  @media screen and (max-width:$size) {
+    @content ;
+  }
+}
+
